@@ -1,0 +1,4 @@
+source 'https://gems.ruby-china.org'
+
+gem 'rake', '~> 12.3'
+gem 'nokogiri', '~> 1.6', '>= 1.6.8'

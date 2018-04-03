@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "thepiratebay": "^1.4.7"
+    "sqlite3": "^4.0.0",
+    "thepiratebay": "^1.4.7",
+    "uuid": "^3.2.1"
   }
 }

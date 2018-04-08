@@ -48,12 +48,13 @@ const api = {
   },
   addTorrent(episodeId, torrent) {
     db.serialize(() => {
-      db.run(`insert into torrents (seeders, leechers, size, verified, magnet_link, episode_id) values(?, ?, ?, ?, ?, ?)`,
+      db.run(`insert into torrents (seeders, leechers, size, verified, magnet_link, choice, episode_id) values(?, ?, ?, ?, ?, ?)`,
         torrent.seeders,
         torrent.leechers,
         torrent.size,
         torrent.verified ? 1 : 0,
         torrent.magnetLink,
+        0.0,
         episodeId,
         () => {
           console.log('addTorrent done');

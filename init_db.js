@@ -6,6 +6,7 @@ db.serialize(function() {
   db.run("create unique index idx_e_name on episodes (name)");
   db.run("create unique index idx_id_name on episodes (id)");
   db.run(`CREATE TABLE torrents (
+    id text,
     seeders integer,
     leechers integer,
     size float,

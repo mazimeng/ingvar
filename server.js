@@ -1,8 +1,10 @@
 const express = require('express')
+const api = require('./api')
 const app = express()
 
 app.use(express.static('public'))
-app.get('/torrents', function (req, res) {
+
+app.get('/episodes', function (req, res) {
   res.send('hello world')
 })
 
